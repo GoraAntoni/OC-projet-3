@@ -249,7 +249,6 @@ header{
 .restaurant_cards{
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1fr [4];
     grid-template-rows: repeat(4, 1fr);
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -318,3 +317,42 @@ header{
     border-radius: 0 0 20px 20px;
 }
 
+.restaurant_block-info{
+    color: black;
+    margin-left: 20px;
+}
+
+.restaurant_block-hearth{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 30px;
+}
+
+.footer{
+    width: 100%;
+    background-color: #353535;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .footer__bloc{
+    display: inline;
+    padding: 0 40px;
+    width: 100%;
+    max-width: 1200px;
+}
