@@ -113,7 +113,7 @@ header{
 
 .homepage_button{
     opacity: 1;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    background: webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
     background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
     color: white;
     padding: 0 20px;
@@ -348,11 +348,59 @@ header{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-  }
+}
   
-  .footer__bloc{
+.footer_bloc{
     display: inline;
     padding: 0 40px;
     width: 100%;
     max-width: 1200px;
+}
+
+.footer_bloc .logo{
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+}
+  
+.footer_bloc-links{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: auto;
+}
+  
+.footer_bloc-link{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    text-align: center;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+}
+  
+.footer_bloc-link:hover .footer__bloc-link__title{
+    text-decoration: underline;
+}
+  
+.footer_bloc-link i{
+    margin-right: 7px;
+}
+  
+.footer_bloc-link_title{
+    font-size: 16px;
+    font-weight: 400;
 }
