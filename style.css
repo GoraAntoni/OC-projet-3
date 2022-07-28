@@ -12,6 +12,87 @@ body{
     background: #f6f6f6;
 }
 
+/* début loading spinner */
+
+.loader{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background: #f6f6f6;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    visibility: hidden;
+}
+
+.spinner{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.loader::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: anim_loader 3s;
+    visibility: hidden;
+    background-color: #fafafa;
+}
+
+@keyframes anim_loader{
+    0%{
+        visibility: visible;
+        opacity: 0.9;
+    }
+    50%{
+        visibility:visible;
+        opacity: 0.9;
+    }
+    100%{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.spinner::before{
+    content:'';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 10px solid #99e2d0;
+    border-color: #9356dc #99e2d0 #ff79da #99e2d0;
+    border-radius: 50%;
+    animation: anim_spinner 3s;
+    visibility: hidden;
+}
+
+@keyframes anim_spinner{
+    0%{
+        visibility: visible;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    50%{
+        opacity: 0.9;
+        transform: rotate(360deg)
+    }
+    100%{
+        transform: rotate(720deg);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+/* fin loading spinner */
+
 a{
     text-decoration: none;
     color: #ffffff;
