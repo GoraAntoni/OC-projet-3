@@ -425,7 +425,7 @@ a{
     margin-left: 20px;
 }
 
-.restaurant_block-hearth{
+.restaurant_block-heart{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -439,8 +439,10 @@ a{
     width: 30px;
     height: 30px;    
 }
+
         /* tentative animation coeur */
-i{
+
+.restaurant_block-heart i{
     font-size: 30px;
     position: absolute;
     bottom: 15px;
@@ -448,7 +450,7 @@ i{
     color: #9356dc;
 }
 
-.fas{
+.restaurant_block-heart .fas{
     color: transparent;
     background-image: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
     background-clip: text;
