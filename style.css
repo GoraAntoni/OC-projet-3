@@ -437,7 +437,31 @@ a{
     align-items: center;
     margin-right: 20px;
     width: 30px;
+    height: 30px;    
 }
+        /* tentative animation coeur */
+i{
+    font-size: 30px;
+    position: absolute;
+    bottom: 15px;
+    transform: translateY(-50%);
+    color: #9356dc;
+}
+
+.fas{
+    color: transparent;
+    background-image: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.fas:hover{
+    opacity: 1;
+}
+
+        /* fin animation coeur */
 
 .footer{
     width: 100%;
