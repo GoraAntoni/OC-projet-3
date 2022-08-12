@@ -129,6 +129,32 @@ header .header_logo a{
 .menu_header_title{
     font-family: 'Shrikhand', cursive;
 }
+
+/* animation coeur */
+
+.menu_header_heart i{
+    font-size: 40px;
+    position: absolute;
+    left: 1500px;
+    transform: translateY(-50%);
+    color: #9356dc;
+}
+    
+.menu_header_heart .fas{
+    color: transparent;
+    background-image: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+}
+    
+.fas:hover{
+    opacity: 1;
+}
+
+    /* fin anim */
+
 .menu_board_bloc{
     display: -ms-grid;
     display: grid;
@@ -140,6 +166,17 @@ header .header_logo a{
     font-weight: 400;
     text-transform: uppercase;
 }
+
+.menu_board_title h3::after{
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: #99e2d0;
+    position: absolute;
+    z-index: 20;
+    left: 0px; bottom: -8px ;
+}        
+
 .menu_board_case{
     position: relative;
     cursor: pointer;
@@ -222,6 +259,77 @@ header .header_logo a{
     -ms-flex-align: center;
         align-items: center;
 }
+
+    /* Animation apparition menu */
+
+.menu_board_case{
+    animation: menu_opacity 1s both;
+}
+
+@-webkit-keyframes menu_opacity{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu_opacity{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#case-1{
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+}
+  
+#case-2{
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+  
+#case-3{
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+}
+  
+#case-4{
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+}
+  
+#case-5{
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+}
+  
+#case-6{
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+}
+  
+#case-7{
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+}
+  
+#case-8{
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+}
+  
+#case-9{
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+}
+
+   /* footer */
 
 .footer{
     width: 100%;

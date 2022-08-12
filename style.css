@@ -440,7 +440,7 @@ a{
     height: 30px;    
 }
 
-        /* tentative animation coeur */
+        /* animation coeur */
 
 .restaurant_block-heart i{
     font-size: 30px;
@@ -463,8 +463,8 @@ a{
     opacity: 1;
 }
 
-        /* fin animation coeur */
-
+        /* footer */
+        
 .footer{
     width: 100%;
     background-color: #353535;
