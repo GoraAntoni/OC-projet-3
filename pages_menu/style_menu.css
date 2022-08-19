@@ -153,7 +153,7 @@ header .header_logo a{
     opacity: 1;
 }
 
-    /* fin anim */
+    /* fin anim coeur */
 
 .menu_board_bloc{
     display: -ms-grid;
@@ -174,7 +174,8 @@ header .header_logo a{
     background: #99e2d0;
     position: absolute;
     z-index: 20;
-    left: 0px; bottom: -8px ;
+    left: 0px; 
+    bottom: -8px;
 }        
 
 .menu_board_case{
@@ -197,6 +198,65 @@ header .header_logo a{
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
             box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Anim validation */
+
+.menu_board_case:hover .validation_box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-animation: slide-left 0.5s ease;
+            animation: slide-left 0.5s ease;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+}
+
+.menu_board_case:hover .price{
+    padding-right: 70px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.menu_board_case .validation_box{
+    display: none;
+    position: absolute;
+    background: #99E2D0;
+    border-radius: 0 15px 15px 0;
+    right: 0px;
+    padding: 0 13px;
+    height: 100%;
+}
+  
+
+@-webkit-keyframes slide-left{
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+    }
+    100% {
+      -webkit-transform: scaleX(-50px);
+              transform: scaleX(-50px);
+    }
+}
+  
+  @keyframes slide-left{
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+    }
+    100% {
+      -webkit-transform: scaleX(-50px);
+              transform: scaleX(-50px);
+    }
+}
+  
+/* fin Anim validation */
 
 .menu_case_dish{
     margin-left: 20px;
