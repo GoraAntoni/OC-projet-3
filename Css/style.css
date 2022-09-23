@@ -38,25 +38,9 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-animation: anim_loader 3s;
-          animation: anim_loader 3s;
+  animation: anim_loader 3s;
   visibility: hidden;
   background-color: #fafafa;
-}
-
-@-webkit-keyframes anim_loader {
-  0% {
-    visibility: visible;
-    opacity: 0.9;
-  }
-  50% {
-    visibility: visible;
-    opacity: 0.9;
-  }
-  100% {
-    visibility: hidden;
-    opacity: 0;
-  }
 }
 
 @keyframes anim_loader {
@@ -81,26 +65,8 @@ body {
   border: 10px solid #99e2d0;
   border-color: #9356dc #99e2d0 #ff79da #99e2d0;
   border-radius: 50%;
-  -webkit-animation: anim_spinner 3s;
-          animation: anim_spinner 3s;
+  animation: anim_spinner 3s;
   visibility: hidden;
-}
-
-@-webkit-keyframes anim_spinner {
-  0% {
-    visibility: visible;
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-  50% {
-    opacity: 0.9;
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(720deg);
-    visibility: hidden;
-    opacity: 0;
-  }
 }
 
 @keyframes anim_spinner {
@@ -128,15 +94,27 @@ a {
 .main {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .header {
+  -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,6 +133,8 @@ a {
 }
 
 .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,6 +159,8 @@ a {
 .homepage_container {
   width: 100%;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,6 +168,9 @@ a {
   -ms-flex-pack: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 50px 0;
 }
@@ -207,13 +192,16 @@ a {
   color: white;
   padding: 0 20px;
   border-radius: 200px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .homepage_button:hover {
   opacity: 0.8;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
@@ -221,6 +209,8 @@ a {
   padding: 25px 0;
   width: 100%;
   background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,6 +218,9 @@ a {
   -ms-flex-pack: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -236,7 +229,12 @@ a {
   max-width: 1200px;
   background-color: white;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -245,7 +243,11 @@ a {
 }
 
 .working_step {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: #f6f6f6;
   height: auto;
@@ -253,13 +255,16 @@ a {
   margin: 10px 20px;
   border-radius: 20px;
   position: relative;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
 }
 
 .working_step:hover {
   opacity: 0.8;
   cursor: pointer;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
   background: #f8ecff;
 }
@@ -270,6 +275,7 @@ a {
   position: absolute;
   padding: 3px 8px 3px 8px;
   border-radius: 500px;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -279,9 +285,20 @@ a {
 }
 
 .working_steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.working_text {
+  color: #000000;
 }
 
 .restaurants {
@@ -289,6 +306,8 @@ a {
   background: #f6f6f6;
   padding: 20px;
   max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,7 +315,12 @@ a {
   -ms-flex-pack: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -312,23 +336,39 @@ a {
 
 .restaurant_card {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   width: 100%;
   border-radius: 20px;
+  -webkit-transform: scale(1);
   transform: scale(1);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .restaurant_card:hover {
+  -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transform: scale(1.02);
   transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(147, 86, 220, 0.6);
   box-shadow: 0px 0px 10px 2px rgba(147, 86, 220, 0.6);
 }
 
 .restaurant_card-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -363,8 +403,14 @@ a {
 
 .restaurant_block {
   background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 90px;
@@ -377,6 +423,8 @@ a {
 }
 
 .restaurant_block-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -415,6 +463,8 @@ a {
 .footer {
   width: 100%;
   background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,14 +489,26 @@ a {
 }
 
 .footer_bloc-links {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: auto;
 }
 
 .footer_bloc-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   text-align: center;
   color: white;
@@ -465,4 +527,32 @@ a {
 .footer_bloc-link_title {
   font-size: 16px;
   font-weight: 400;
+}
+
+/* Responsive */
+@media screen and (min-width: 800px) {
+  .restaurant_cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .working_step {
+    width: 100%;
+  }
+  .working_steps {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  .footer_bloc {
+    margin-bottom: 15px;
+  }
+  .footer_bloc-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 900px;
+  }
 }/*# sourceMappingURL=style.css.map */
